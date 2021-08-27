@@ -1,0 +1,298 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+header {
+	background: rgba(4,219,239,1);
+	background: -moz-linear-gradient(-45deg, rgba(4,219,239,1) 0%, rgba(3,120,253,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(4,219,239,1)), color-stop(100%, rgba(3,120,253,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(4,219,239,1) 0%, rgba(3,120,253,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(4,219,239,1) 0%, rgba(3,120,253,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(4,219,239,1) 0%, rgba(3,120,253,1) 100%);
+	background: linear-gradient(135deg, rgba(4,219,239,1) 0%, rgba(3,120,253,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04dbef', endColorstr='#0378fd', GradientType=1 );
+	color: white;
+}
+
+h1,h2,h3 {
+	font-family: Ubuntu;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.container {
+	width: 1171px;
+	margin: 0 auto;
+}
+
+.logo {
+	margin-top: 62px;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.offer {
+	margin-top: 150px;
+}
+
+.header-title {
+	width: 560px;
+	font-size: 37px;
+}
+
+.header-title span {
+	font-size: 59px;
+}
+
+.header-text {
+	width: 400px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+
+.img-header {
+	width: 640px;
+	height: 640px;	
+}
+
+.btn {
+	background: #FFD429;
+	font-family: Montserrat;
+	font-weight: black;
+	font-size: 15px;
+	color: black;
+	display: block;
+	padding: 25px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 222px;
+}
+
+.section-main {
+	padding-top: 110px;
+	padding-bottom: 120px;
+}
+
+.what-awaits {
+	margin-top: 170px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-waiting {
+	font-size: 19px;
+	text-align: center;
+}
+
+.text-waiting {
+	font-family: Ubuntu;
+	font-weight: 400;
+	font-size: 15px;
+	width: 290px;
+	text-align: center;
+}
+
+.icon-waiting {
+	padding-left: 100px;
+}
+
+.bg-form {
+	background: #ECF3F8;
+	padding: 100px 0;
+}
+
+.form {
+	margin-top: 56px;
+}
+
+.input {
+	font-family: Ubuntu;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	width: 312px;
+	height: 50px;
+	padding-left: 25px;
+	margin: 0 auto 15px;
+}
+
+.button {
+	width: 340px;
+	border: 0; 
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+.footer {
+	background: #164d7a;
+}
+
+.footer-text {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	padding: 60px 0 55px 0;
+	margin: 0;
+}
+
+.animated {
+	opacity: 0;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+
+	.img-header {
+		display: block;
+		width: 490px;
+		height: 490px;
+		margin-top: 70px;
+		margin-left: -75px;
+	}
+
+	header {
+		padding-bottom: 70px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.img-header {
+		width: 676px;
+		height: 676px;
+		margin: 0;
+	}
+
+	.header-title {
+		width: 100%;
+	}
+
+	.header-text {
+		width: 100%;
+	}
+
+	.text-waiting {
+		width: 240px;
+	}
+
+	.br-waiting {
+		display: none;
+	}
+
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+
+	.img-header {
+		width: 520px;
+		height: 520px;
+	}
+
+	.what-awaits{
+		flex-direction: column;
+		margin-top: 50px;
+	}
+
+	.icon-waiting {
+		display: none;
+	}
+
+	.column-text-waiting {
+		background: url(../image/icon1.png) left no-repeat;
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+
+	.column-text-waiting2 {
+		background: url(../image/icon2.png) left no-repeat;
+		padding: 5px;
+		margin-bottom: 20px;
+	}
+
+	.column-text-waiting3 {
+		background: url(../image/icon3.png) left no-repeat;
+		padding: 5px;
+	}
+
+	.title-waiting {
+		text-align: left;
+		padding-left: 100px;
+	}
+
+	.text-waiting {
+		width: 453px;
+		text-align: left;
+		padding-left: 100px;
+		margin-bottom: 10px;
+	}
+
+	.input {
+		margin: 0;
+		width: 90%;
+	}
+
+	.button {
+		margin: 0;
+		width: 96%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+
+	.offer {
+		width: 90%;
+	}
+
+	.header-title {
+		width: auto;
+	}
+
+	.header-text {
+		width: auto;
+	}
+
+	.img-header {
+		width: 100%;
+		height: auto;
+	}
+
+	.text-waiting {
+		width: 70%;
+	}
+
+	.button {
+		width: 100%;
+	}
+}
